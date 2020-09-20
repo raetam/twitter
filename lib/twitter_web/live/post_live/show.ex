@@ -9,6 +9,8 @@ defmodule TwitterWeb.PostLive.Show do
   end
 
   @impl true
+  @spec handle_params(map, any, Phoenix.LiveView.Socket.t()) ::
+          {:noreply, Phoenix.LiveView.Socket.t()}
   def handle_params(%{"id" => id}, _, socket) do
     {:noreply,
      socket

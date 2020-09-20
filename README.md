@@ -27,3 +27,8 @@ To start your Phoenix server:
 
 ## DEV 5 :: Twitter.Timeline :: 리스트 역순배열
 - Twitter.Timeline::update_list_posts_function
+
+## DEV 6 :: VIEW :: EDIT 업데이트 반응
+- TwitterWeb.PostLive.Index::add_handle_info_function::업데이트반응
+- TwitterWeb.PostLive.Index::update_mount_function::업데이트반응
+- index.html::phx-update="prepend::업데이트반응
