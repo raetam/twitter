@@ -20,3 +20,10 @@ To start your Phoenix server:
 
 ## DEV 3 :: VIEW
 - VIEW::FORM_COMPONENT::body블럭만남김
+
+## DEV 4 :: VIEW :: 즉각적인 업데이트 가능해짐
+- Twitter.Timeline::add_broadcast,subscribe_function
+- TwitterWeb.PostLive.Index::add_handle_info_function
+
+## DEV 5 :: Twitter.Timeline :: 리스트 역순배열
+- Twitter.Timeline::update_list_posts_function
