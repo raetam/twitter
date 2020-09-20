@@ -11,5 +11,12 @@ To start your Phoenix server:
 
 ## DEV 1
 - mix phx.new twitter
-- mix ecto.create
 - git init
+
+## DEV 2 :: ECTO :: CREATE
+- mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
+- ECTO::schema::add_defaultvalue
+- ECTO::changeset::add_post
+
+## DEV 3 :: VIEW
+- VIEW::FORM_COMPONENT::body블럭만남김
