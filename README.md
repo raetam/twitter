@@ -16,7 +16,7 @@ To start your Phoenix server:
 ## DEV 2 :: ECTO :: CREATE
 - mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
 - ECTO::schema::add_defaultvalue
-- ECTO::changeset::add_post
+- ECTO::changeset::update_body남김,글자수제한검
 
 ## DEV 3 :: VIEW
 - VIEW::FORM_COMPONENT::body블럭만남김
