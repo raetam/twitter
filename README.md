@@ -16,19 +16,19 @@ To start your Phoenix server:
 ## DEV 2 :: ECTO :: CREATE
 - mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
 - ECTO::schema::add_defaultvalue
-- ECTO::changeset::update_body남김,글자수제한검
+- ECTO::changeset::update_remain only body
 
-## DEV 3 :: VIEW
-- VIEW::FORM_COMPONENT::body블럭만남김
+## DEV 3 :: VIEW :: FORM_COMPONENT
+- VIEW::FORM_COMPONENT::update_remain only body
 
-## DEV 4 :: VIEW :: 즉각적인 업데이트 가능해짐
+## DEV 4 :: VIEW :: new function become reactive
 - Twitter.Timeline::add_broadcast,subscribe_function
 - TwitterWeb.PostLive.Index::add_handle_info_function
 
-## DEV 5 :: Twitter.Timeline :: 리스트 역순배열
+## DEV 5 :: Twitter.Timeline :: list become inverse order
 - Twitter.Timeline::update_list_posts_function
 
-## DEV 6 :: VIEW :: EDIT 업데이트 반응
-- TwitterWeb.PostLive.Index::add_handle_info_function::업데이트반응
-- TwitterWeb.PostLive.Index::update_mount_function::업데이트반응
-- index.html::phx-update="prepend::업데이트반응
+## DEV 6 :: VIEW :: EDIT function become reactive
+- TwitterWeb.PostLive.Index::add_handle_info_function
+- TwitterWeb.PostLive.Index::update_mount_function
+- index.html::phx-update="prepend"
